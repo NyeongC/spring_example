@@ -1,0 +1,15 @@
+시작시간 : Sat Nov 25 2023 22:58:18 GMT+0900 (한국 표준시) (23 minutes)
+아마존 리눅스 1
+al2023-ami-2023.2.20231113.0-kernel-6.1-x86_64
+t2.micro
+스토리지 : 30Gib(프리티어 최대)
+탄력적 IP 사용
+
+
+window 접속시 putty 이용 
+https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+- puttygen.exe
+pem -> ppk 변환
+
+- putty.exe
+ppk 넣고 ec2-user@탄력적IP 후 접속
