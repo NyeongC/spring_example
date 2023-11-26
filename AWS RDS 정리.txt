@@ -1,0 +1,21 @@
+2023.11.26 21:10:00 생성 / 프리티어 12개월 사용
+인스턴스 클래스 :  db.t2.micro
+vCPU : 1
+스토리지 유형 : 범용 SSD(gp2)
+스토리지 : 20 GiB
+RAM : 1 GB
+엔진 : MariaDB 
+엔진 버전 : 10.6.14
+
+- RDS 운영환경에 맞는 파라미터 설정
+타임존, 캐릭터 셋, 맥스 커넥스
+
+time_zone : Asia/Seoul
+
+character_xxx : utf8mb4
+
+collation_xx : utf8mb4_general_ci
+
+max_connections : 150
+
+DB 파라미터 그룹 변경
