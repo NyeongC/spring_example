@@ -13,3 +13,38 @@ pem -> ppk 변환
 
 - putty.exe
 ppk 넣고 ec2-user@탄력적IP 후 접속
+
+
+리눅스 서버 설정
+- java
+- timezone
+- hostname
+
+- 자바 설치
+sudo yum install -y java-1.8.0-openjdk-devel.x86_64 // 책
+
+-자바 관련 파일 찾기
+yum search java-1.8
+sudo yum install -y java-1.8.0-amazon-corretto.x86_64
+
+-java 변경
+sudo /usr/sbin/alternatives --config java
+
+java -version
+
+- 타임존 변경
+sudo rm /etc/localtime
+sudo ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+
+-Hostname 변경
+
+sudo vim /etc/sysconfig/network
+파일 hostname 설정 후 
+리부트
+sudo reboot
+
+sudo vim /etc/hosts
+
+
+
+
