@@ -19,3 +19,43 @@ collation_xx : utf8mb4_general_ci
 max_connections : 150
 
 DB 파라미터 그룹 변경
+
+엔드포인트
+spring-example.cb1bfgyb0hca.ap-northeast-2.rds.amazonaws.com
+
+CREATE TABLE test(
+	id bigint(20) NOT NULL AUTO_INCREMENT,
+	content varchar(255) DEFAULT NULL,
+	PRIMARY KEY(id)
+) ENGINE=InnoDB;
+
+insert into test(content) values ('테스트');
+
+select * from test;
+
+
+	PRIMARY KEY(id)
+) ENGINE=InnoDB;
+
+아래의 명령어로 yum repository에 등록
+sudo yum install https://dev.mysql.com/get/mysql80-community-release-el7-5.noarch.rpm
+
+MySQL 설치하기
+sudo yum -y install mysql-community-server
+
+아마존 리눅스 2023을 쓸 때는 el9 버전 레포지토리를 사용해주어야 한다고 합니다!
+[
+wget dev.mysql.com/get/mysql80-commuity-release-e17-5.noarch.rpm
+rpm -ivh mysql-community-release-e17.5.noarch.rpm
+]
+이렇게 작성하던 부분을
+[
+sudo dnf install https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
+sudo dnf install mysql-community-server
+]
+이렇게 작성하시면 잘 설치 돼요! 
+출처: https://dev.classmethod.jp/articles/ec2-mysql-install-confilicting-requests-error-kr/
+
+- 접속
+mysql -u ccn -p -h spring-example.cb1bfgyb0hca.ap-northeast-2.rds.amazonaws.com
+(보안그룹 인바운드규칙 설정 잘해야함)
