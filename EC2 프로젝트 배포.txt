@@ -1,0 +1,28 @@
+- EC2에 깃설치
+sudo yum install git
+
+git --version
+
+- 깃 클론 할디렉토리 생성
+
+mkdir ~/app && mkdir ~/app/step1
+
+cd ~/app/step1
+
+git clone https://github.com/NyeongC/spring_example.git
+
+- 테스트 수행
+./gradlew test
+
+만약 실행 권한이 없다면
+./gradlew: Permission denied
+
+권한추가 후 실행
+chmod +x ./gradlew
+
+- 배포 스크립트 생성
+vim ~/app/step1/deploy.sh
+
+deploy.sh 생성
+
+chmod +x ./deploy.sh
