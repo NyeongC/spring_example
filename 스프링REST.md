@@ -276,7 +276,7 @@ public class GsonExample {
 
 ---
 
-### 🧩 서드파티(Third-Party)란?
+### 서드파티(Third-Party)란?
 
 **서드파티(3rd Party)**란  
 **내가 만든 것이 아닌 외부에서 제공한 제품, 소프트웨어, 서비스 또는 API**를 말합니다.
@@ -297,7 +297,7 @@ public class GsonExample {
 
 ---
 
-#### 📘 표 4-1. 주요 메서드 소개
+#### 표 4-1. 주요 메서드 소개
 
 | 메서드 | 설명 |
 |--------|------|
@@ -346,7 +346,7 @@ Product product = restTemplate.getForObject(
 > 위처럼 외부 API에서 응답받은 JSON을  
 > `Product` 클래스 형태로 바로 변환하여 사용할 수 있습니다.
 
-### ☠️ 순수 자바로 REST API 호출할 때의 번거로움
+### 순수 자바로 REST API 호출할 때의 번거로움
 
 기존 자바 방식으로 외부 API를 호출하려면 아래처럼  
 **커넥션 생성 → 요청 설정 → 응답 읽기 → 스트림 닫기 등**  
@@ -375,7 +375,7 @@ try {
 }
 ```
 
-😩 너무 길고 복잡하고, 예외 처리도 따로 해줘야 합니다...
+너무 길고 복잡하고, 예외 처리도 따로 해줘야 함..
 
 ---
 
@@ -400,7 +400,7 @@ System.out.println(result);
 
 ---
 
-### 🎯 결론
+### 결론
 
 > **RestTemplate은 자바의 복잡한 HTTP 호출 과정을 깔끔하게 추상화한 스프링의 도구입니다.**  
 > 외부 REST API를 호출할 때는 무조건 이걸 쓰는 게 실무 표준입니다.
@@ -412,7 +412,7 @@ System.out.println(result);
 > ✅ 이처럼, **외부 REST 서비스로부터 JSON 응답을 받아** 내부 서비스에서 활용하는 방식은  
 > 흔히 **서드파티 API 연동, MSA 간 통신, 외부 시스템 통합** 에서 사용됩니다.
 
-# 📡 RSS / Atom 피드 정리
+# RSS / Atom 피드 정리
 
 ## ✅ 피드란?
 
@@ -423,7 +423,7 @@ System.out.println(result);
 
 ---
 
-## 📦 피드의 종류
+## 피드의 종류
 
 | 종류 | 설명 | 포맷 |
 |------|------|------|
@@ -434,7 +434,7 @@ System.out.println(result);
 
 ---
 
-## 🧭 동작 방식
+## 동작 방식
 
 1. 서버에서 RSS 또는 Atom 포맷으로 **피드 주소 생성**  
    예: `https://cheol.dev/rss.xml`
@@ -456,7 +456,7 @@ System.out.println(result);
 
 ---
 
-## 🛠 사용되는 곳
+## 사용되는 곳
 
 | 분야 | 설명 |
 |------|------|
@@ -468,7 +468,7 @@ System.out.println(result);
 
 ---
 
-## 🧪 실제 RSS 예시 (요약)
+## 실제 RSS 예시 (요약)
 
 ```xml
 <rss version="2.0">
