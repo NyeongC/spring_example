@@ -106,6 +106,19 @@ public String getUser(@PathVariable String userId) {
 }
 ```
 
+#POST 요청 시 @PathVariable, @RequestBody 병행 가능
+
+```java
+@PostMapping("/users/{userId}/orders")
+public ResponseEntity<Order> createOrder(
+    @PathVariable Long userId,
+    @RequestBody OrderRequest orderRequest
+) {
+    // userId: URL에서 추출된 사용자 ID
+    // orderRequest: Request Body에서 전달된 주문 정보
+    return ResponseEntity.ok(orderService.createOrder(userId, orderRequest));
+}
+```
 ---
 
 ### 마셜링(Marshalling) View로 XML 만들기(요즘 거의 안씀..)
