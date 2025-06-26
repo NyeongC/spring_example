@@ -106,7 +106,7 @@ public String getUser(@PathVariable String userId) {
 }
 ```
 
-#POST 요청 시 @PathVariable, @RequestBody 병행 가능
+# POST 요청 시 @PathVariable, @RequestBody 병행 가능
 
 ```java
 @PostMapping("/users/{userId}/orders")
